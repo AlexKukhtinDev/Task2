@@ -1,6 +1,6 @@
 public class Range {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 15, 17};
+        int[] array = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 16, 18};
         range(array.length, array);
     }
 
@@ -8,12 +8,9 @@ public class Range {
         if (length < 1) {
             return;
         }
-
         StringBuilder res = new StringBuilder();
-
         int min = array[0];
         int max = array[0];
-
         for (int i = 1; i < length; i++) {
             if ((max + 1) == array[i]) {
                 max++;
