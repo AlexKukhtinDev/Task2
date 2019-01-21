@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class Range {
+public class Range {
     public static void main(String[] args) {
         //input array
         int arr[] = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 16, 18};
@@ -46,6 +46,7 @@ class Range {
 
         res = new Integer[1];
         res[0] = (int) arr.toArray()[0];
+
 
         return res;
     }
