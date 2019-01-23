@@ -1,13 +1,13 @@
 import java.util.Arrays;
 
 public class Rotate {
-    static int[] rotate(int[] nums, int k) {
-        if (k > nums.length) {
-            k = k % nums.length;
+    public static int[] rotate(int[] array, int k) {
+        if (k > array.length) {
+            k = k % array.length;
         }
-        int[] result = new int[nums.length];
-        System.arraycopy(nums, k, result, 0, nums.length - k);
-        System.arraycopy(nums, 0, result, nums.length - k, k);
+        int[] result = new int[array.length];
+        System.arraycopy(array, k, result, 0, array.length - k);
+        System.arraycopy(array, 0, result, array.length - k, k);
         return result;
     }
 
