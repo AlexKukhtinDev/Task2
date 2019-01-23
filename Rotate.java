@@ -6,8 +6,8 @@ public class Rotate {
         int[] result = new int[nums.length];
         System.arraycopy(nums, k, result, 0, nums.length - k);
         System.arraycopy(nums, 0, result, nums.length - k, k);
-        nums = result;
-        return nums;
+        result = nums;
+        return result;
     }
 
     public static void main(String[] args) {

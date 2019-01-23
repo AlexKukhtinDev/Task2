@@ -8,22 +8,22 @@ public class Range {
         if (length < 1) {
             return;
         }
-        StringBuilder res = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         int min = array[0];
         int max = array[0];
         for (int i = 1; i < length; i++) {
             if ((max + 1) == array[i]) {
                 max++;
             } else {
-                appendRange(res, min, max);
+                appendRange(result, min, max);
                 min = array[i];
                 max = array[i];
             }
             if (i == length - 1) {
-                appendRange(res, min, max);
+                appendRange(result, min, max);
             }
         }
-        System.out.println(res);
+        System.out.println(result);
     }
 
     private static void appendRange(StringBuilder result, int minR, int maxR) {
