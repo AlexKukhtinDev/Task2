@@ -8,13 +8,13 @@ public class RestoreArray {
     }
 
     private static int[] restoreArray(int[] restore) {
-        int[] result;
-        for (int i = 0; i < restore.length; i++) {
-            if (0 < i && 0 > restore[i - 1]) {
-                restore[i - 1] = restore[i] - (restore[i] - restore[i - 2]) / 2;
+        int[] result = Arrays.copyOf(restore, restore.length);
+        for (int i = 0; i < result.length; i++) {
+            if (0 < i && 0 > result[i - 1]) {
+                result[i - 1] = result[i] - (result[i] - result[i - 2]) / 2;
             }
         }
-        result = Arrays.copyOf(restore, restore.length);
+
         return result;
     }
 }

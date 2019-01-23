@@ -1,5 +1,7 @@
+import java.util.Arrays;
+
 public class Rotate {
-    private static int[] rotate(int[] nums, int k) {
+     static int[] rotate(int[] nums, int k) {
         if (k > nums.length) {
             k = k % nums.length;
         }
@@ -11,9 +13,7 @@ public class Rotate {
     }
 
     public static void main(String[] args) {
-        int[] arr1 = {5, 6, 1, 2, 6};
-        for (int array : Rotate.rotate(arr1, 2)) {
-            System.out.print(array + " ");
-        }
+        int[] array = {5, 6, 1, 2, 6};
+        Arrays.toString(array);
     }
 }
